@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    font-family: "Concert One", sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.inputtag {
+    border-bottom: 1px solid #797878;
+}
+
+.inputtag:focus {
+    outline: none;
+    border-bottom: 1px solid #ffff;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '✔';
+    font-size: 1rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
